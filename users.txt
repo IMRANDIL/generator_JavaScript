@@ -1,0 +1,9 @@
+The memory savings achieved by using a generator function instead of a regular approach depend on various factors such as the size of the data being processed, the specific implementation details, and the memory overhead of the surrounding code.
+
+However, in general, generators can provide significant memory savings when dealing with large datasets or streams of data. This is because generators allow you to process data lazily, meaning that you only load and store a small portion of the data in memory at any given time, rather than loading the entire dataset into memory upfront.
+
+For example, if you were to read and process a large file using a regular approach that loads the entire file into memory at once, you would need enough memory to store the entire contents of the file. In contrast, using a generator function allows you to read and process the file in chunks, consuming much less memory overall.
+
+The exact percentage of memory savings can vary depending on the specifics of your implementation and the characteristics of the data being processed. However, it's not uncommon to see significant reductions in memory usage, especially when dealing with large datasets or streams of data.
+
+To get a more accurate estimate of the memory savings in your specific use case, you may need to perform some benchmarking or profiling to compare the memory usage of the generator-based approach with the regular approach.
