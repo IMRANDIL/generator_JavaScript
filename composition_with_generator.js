@@ -46,3 +46,26 @@ const processedUserDataGenerator = processUserData(aggregateUserData(userDataGen
         console.log(user);
     }
 })();
+
+
+
+
+
+// We define three generator functions:
+
+// readUserData: Reads user data from a CSV file and yields each row.
+// processUserData: Processes user data received from a generator and yields the processed data.
+// aggregateUserData: Aggregates processed user data from multiple generators into a single stream.
+// We define paths to CSV files containing user data and create generator instances for reading user data from these files.
+
+// We compose the generators together using delegation, where each generator yields values to the next generator in the pipeline.
+
+// Finally, we iterate over the processed user data and perform additional tasks as needed.
+
+// This example demonstrates how composition with generators enables modular and reusable code structures for processing large datasets efficiently. Each generator function handles a specific aspect of the data processing pipeline, making the code easy to understand, maintain, and extend.
+
+
+
+
+
+
